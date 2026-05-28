@@ -13,14 +13,19 @@ print("Lua")
 
 ## How it works
 The polyglot has this line:
+
 ```a=1;```
 This line is syntactically correct in all 3 languages.
 The next line of the polyglot:
-```--a//(lambda: eval("print('Python')") or exit(0)()```
+```
+--a//(lambda: eval("print('Python')") or exit(0)()
+```
 It is commented out in Lua by the --a at the start, and commented out in JS as well with the //.
 It is a lambda injection for Python.
 Now after that line:
-```--a; lambda: eval("console.log('JavaScript')"); process.exit(0)```
+```
+--a; lambda: eval("console.log('JavaScript')"); process.exit(0)
+```
 It is a Python lambda expression and JavaScript label that is commented out in Lua by the --a.
 After all these lines, it can be just pure Lua, because of the exit and process.exit that caused Python and JS to end the program early, they do not interpret the Lua code.
 

@@ -38,12 +38,20 @@ After all these lines, it can be just pure Lua, because of the exit and process.
 ### First step: Make a project folder
 It is recommended to make a project folder with 3 files.
 The three files you should create are:
+
 • A Lua file (.lua)
+
 • A Python file (.py)
+
 • A JavaScript file (.js)
+
 • A final polyglot file (any file extension)
 
+
+
 Now place all the payloads you need to execute in these three files.
+
+
 
 ### Second step: Compress your Python and JS code into 1 line
 The reason why you have to compress the Python and JS code into 1 line is because you have to fit it in the eval. Lua code is fine and does not have to be compressed.

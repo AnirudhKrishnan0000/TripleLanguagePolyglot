@@ -54,7 +54,7 @@ Now place all the payloads you need to execute in these three files.
 
 
 ### Second step: Compress your Python and JS code into 1 line
-The reason why you have to compress the Python and JS code into 1 line is because you have to fit it in the eval. Lua code is fine and does not have to be compressed.
+The reason why you have to compress the Python and JS code into 1 line is because you have to fit it in the eval.
 The way you do this in both languages is you replace newlines with literal "\n" text inside the file.
 
 ### Third step: Construct the polyglot with all your code

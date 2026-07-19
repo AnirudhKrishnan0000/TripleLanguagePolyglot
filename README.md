@@ -7,8 +7,7 @@ This example polyglot prints which language it is running in:
 a=1;
 --a//(lambda: eval("print('Python')") or exit(0))()
 --a; lambda: eval("console.log('JavaScript')"); process.exit(0)
-
-print("Lua")
+a=1//((not hasattr) and load("print('Lua')"))
 ```
 
 ## How it works

@@ -55,7 +55,7 @@ Now place all the payloads you need to execute in these three files.
 
 ### Second step: Compress your Python and JS code into 1 line
 The reason why you have to compress the Python and JS code into 1 line is because you have to fit it in the eval. Lua code is fine and does not have to be compressed.
-The way you do this in both languages is you replace newlines with semicolons (;).
+The way you do this in both languages is you replace newlines with literal "\n" text inside the file.
 
 ### Third step: Construct the polyglot with all your code
 To construct the polyglot, you have to now paste your code into the template:
@@ -63,8 +63,7 @@ To construct the polyglot, you have to now paste your code into the template:
 a=1;
 --a//(lambda: eval("YOUR PYTHON SOURCE HERE") or exit(0))()
 --a; lambda: eval("YOUR JAVASCRIPT SOURCE HERE; process.exit(0)")()
-
-YOUR LUA SOURCE HERE
+a=1//((not hasattr)and load("YOUR LUA SOURCE HERE")())
 ```
 Place your final code into the polyglot file.
 
